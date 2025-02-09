@@ -1,0 +1,88 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+  margin: 20px auto;
+  padding: 0 0 0 8px;
+  background-color: #fff;
+}
+.append-buttons {
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #005125;
+  color: #005125;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+/* Change color of left arrow */
+.swiper-button-prev {
+  color: #00863d; /* Change this to your desired color */
+}
+
+/* Change color of right arrow */
+.swiper-button-next {
+  color: #00863d; /* Change this to your desired color */
+}
+
+/* Optional: Change the size of the arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 24px; /* Adjust arrow size */
+  width: 20px;
+  height: 20px;
+  opacity: 0.2;
+}
+
+/* Optional: Add a hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #00522a; /* Darker green on hover */
+}

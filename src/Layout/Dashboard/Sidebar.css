@@ -1,0 +1,50 @@
+.ant-menu-light .ant-menu-item {
+  color: white !important;
+  background: transparent !important;
+}
+
+.ant-menu-light .ant-menu-submenu-title {
+  color: white !important;
+  background: transparent !important;
+}
+
+.ant-menu-item:hover {
+  background: white !important;
+  color: black !important;
+}
+
+.ant-menu-item-selected {
+  background: white !important;
+  color: black !important;
+  border-radius: 0 !important;
+  border-left: 6px solid white !important;
+  width: 100% !important;
+}
+
+.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: white !important;
+  background: transparent !important;
+}
+
+.ant-menu .ant-menu-item .ant-menu-item-icon + span {
+  transition: none !important;
+  background: transparent !important;
+}
+
+.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: white !important;
+}
+
+.ant-menu .ant-menu-title-content {
+  transition: none !important;
+  background: transparent !important;
+}
+
+.ant-menu-submenu-open .ant-menu-sub {
+  background: var(--primary-color) !important;
+}
+
+.ant-menu-sub .ant-menu-item-selected {
+  background: white !important;
+  color: black !important;
+}
