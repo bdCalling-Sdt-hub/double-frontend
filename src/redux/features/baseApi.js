@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-export const baseUrl = 'http://68.178.202.182:5000';
+export const baseUrl = 'https://api.cannasseurshemp.com';
 const baseApi = createApi({
         reducerPath: 'baseApi',
         baseQuery: fetchBaseQuery({
