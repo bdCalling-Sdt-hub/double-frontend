@@ -6,4 +6,7 @@ export default defineConfig({
         server: {
                 host: '68.178.202.182',
         },
+        preview: {
+                allowedHosts: ['cannasseurshemp.com'],
+        },
 });
