@@ -152,6 +152,8 @@ const Category = () => {
                                                 getValueFromEvent={normFile}
                                         >
                                                 <Upload
+                                                        beforeUpload={() => false}
+                                                        showUploadList
                                                         multiple={false}
                                                         name="logo"
                                                         action="/upload.do"
