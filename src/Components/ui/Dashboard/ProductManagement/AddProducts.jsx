@@ -19,6 +19,8 @@ const AddProduct = () => {
                 values.images.fileList.forEach((file) => {
                         formData.append('image', file.originFileObj);
                 });
+                delete values.images;
+
                 formData.append('data', JSON.stringify(values));
                 try {
                         const res = await createProduct(formData).unwrap();
@@ -41,7 +43,7 @@ const AddProduct = () => {
                                         <div className="space-y-4">
                                                 {/* Image Upload */}
                                                 <Form.Item
-                                                        label="Product Images"
+                                                        label="Product Images (*Max: 1mb)"
                                                         name="images"
                                                         rules={[
                                                                 {
@@ -156,11 +158,11 @@ const AddProduct = () => {
                                                                 placeholder="Select unit"
                                                                 defaultValue={1}
                                                         >
-                                                                <Select.Option value={'1 unit'}>1 Unit</Select.Option>
-                                                                <Select.Option value={'2 units'}>2 Units</Select.Option>
-                                                                <Select.Option value={'3 units'}>3 Units</Select.Option>
-                                                                <Select.Option value={'4 units'}>4 Units</Select.Option>
-                                                                <Select.Option value={'5 units'}>5 Units</Select.Option>
+                                                                <Select.Option value={1}>1 Unit</Select.Option>
+                                                                <Select.Option value={2}>2 Units</Select.Option>
+                                                                <Select.Option value={3}>3 Units</Select.Option>
+                                                                <Select.Option value={4}>4 Units</Select.Option>
+                                                                <Select.Option value={5}>5 Units</Select.Option>
                                                         </Select>
                                                 </Form.Item>
 

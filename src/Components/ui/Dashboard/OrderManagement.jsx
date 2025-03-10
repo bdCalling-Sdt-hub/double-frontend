@@ -18,7 +18,7 @@ const OrderManagement = () => {
 
         const handleOrderStatusChange = async (id, status) => {
                 try {
-                        const res = await updateOrderStatus({ id, status }).unwrap();
+                        const res = await updateOrderStatus({ id, data: { status } }).unwrap();
 
                         if (res.success) {
                                 toast.success(res.message);
