@@ -69,6 +69,7 @@ const Sidebar = () => {
                         key: 'subMenuSetting',
                         icon: <IoSettingsOutline size={24} />,
                         label: 'Settings',
+
                         children: [
                                 // {
                                 //         key: '/dashboard/personal-info',
@@ -136,6 +137,7 @@ const Sidebar = () => {
                                 </Link>
                         </div>
                         <Menu
+                                // className="overflow-y-scroll"
                                 mode="inline"
                                 theme="dark"
                                 selectedKeys={[selectedKey]}

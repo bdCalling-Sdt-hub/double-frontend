@@ -7,7 +7,7 @@ const Header = () => {
         const userData = {
                 data: {
                         role: 'admin',
-                        name: 'Alison Burger',
+                        name: 'Cannasseurs Management',
                 },
         };
 
