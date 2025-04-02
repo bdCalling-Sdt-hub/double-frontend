@@ -20,6 +20,7 @@ const AddProduct = () => {
                         formData.append('image', file.originFileObj);
                 });
                 delete values.images;
+                values.weight = Number(values.weight);
 
                 formData.append('data', JSON.stringify(values));
                 try {
@@ -104,6 +105,24 @@ const AddProduct = () => {
                                                 >
                                                         <TextArea rows={6} placeholder="Enter product description" />
                                                 </Form.Item>
+                                                <Form.Item
+                                                        rules={[
+                                                                {
+                                                                        required: true,
+                                                                        message: 'Please add a THCA content percentage!',
+                                                                },
+                                                        ]}
+                                                        name="THCA_content"
+                                                        label="THCA Content(1-100%)"
+                                                >
+                                                        <InputNumber
+                                                                className="w-full"
+                                                                placeholder="Enter THCA content percentage"
+                                                                suffix="%"
+                                                                min={0}
+                                                                max={100}
+                                                        />
+                                                </Form.Item>
                                         </div>
 
                                         {/* Right Side */}
@@ -153,17 +172,11 @@ const AddProduct = () => {
                                                                 },
                                                         ]}
                                                 >
-                                                        <Select
+                                                        <InputNumber
                                                                 className="w-full"
-                                                                placeholder="Select unit"
-                                                                defaultValue={1}
-                                                        >
-                                                                <Select.Option value={1}>1 Unit</Select.Option>
-                                                                <Select.Option value={2}>2 Units</Select.Option>
-                                                                <Select.Option value={3}>3 Units</Select.Option>
-                                                                <Select.Option value={4}>4 Units</Select.Option>
-                                                                <Select.Option value={5}>5 Units</Select.Option>
-                                                        </Select>
+                                                                placeholder="Enter weight"
+                                                                min={0}
+                                                        />
                                                 </Form.Item>
 
                                                 {/* Discount */}

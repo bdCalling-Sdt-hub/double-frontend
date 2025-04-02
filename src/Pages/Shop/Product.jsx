@@ -188,6 +188,7 @@ const Product = () => {
                                                         <span className="font-bold">Category:</span>{' '}
                                                         {product?.category?.name}
                                                 </h1>
+                                                {product?.HCA_content && <p>{product?.HCA_content}</p>}
                                         </div>
                                 </div>
                                 {/* <div className="mt-10">
