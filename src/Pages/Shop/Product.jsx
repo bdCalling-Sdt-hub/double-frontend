@@ -126,6 +126,15 @@ const Product = () => {
                                                                 <option value="3">3 Unit</option>
                                                                 <option value="4">4 Unit</option>
                                                                 <option value="5">5 Unit</option>
+                                                                <option value="6">6 Unit</option>
+                                                                <option value="7">7 Unit</option>
+                                                                <option value="8">8 Unit</option>
+                                                                <option value="9">9 Unit</option>
+                                                                <option value="10">10 Unit</option>
+                                                                <option value="100">100 Unit</option>
+                                                                <option value="200">200 Unit</option>
+                                                                <option value="500">500 Unit</option>
+                                                                <option value="1000">1000 Unit</option>
                                                         </select>
                                                 </div>
 
