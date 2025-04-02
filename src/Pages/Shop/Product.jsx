@@ -199,7 +199,7 @@ const Product = () => {
                                                 </h1>
 
                                                 <div className="mt-2">
-                                                        <p>THCA Content Percentage: {product?.THCA_content}</p>
+                                                        <p>THCA Content Percentage: {product?.THCA_content} %</p>
                                                 </div>
                                         </div>
                                 </div>
